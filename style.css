@@ -1,0 +1,823 @@
+@font-face {
+    font-family: Playfair;
+    src: url("PlayfairDisplay-Italic-VariableFont_wght.ttf");
+}
+*{
+    margin: 0;
+}
+.preheader{
+    font-family: Playfair;
+    width: 100vw;
+    height: 168px;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 85px;
+    letter-spacing: 0.03em;
+    text-shadow: 3px 0px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    
+}
+.gradient-text {
+    background: linear-gradient(180deg, #ff8fd4 60%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, #1E2887, #1E2887);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    display: flex;
+    align-items:flex-end;
+  }
+header{
+    width:100vw;  
+    height: 66.6667vw;
+    background: linear-gradient(178.76deg, #FFFFFF 2.15%, rgba(255, 255, 255, 0) 26.47%), linear-gradient(0.48deg, #0C0000 0.79%, rgba(0, 0, 0, 0) 37.57%), url(background.svg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.part1_total{
+    background: linear-gradient(180deg, #E0EDFF 4.14%, rgba(217, 221, 255, 0) 13.78%), #FFFFFF;
+}
+nav img{
+    width: 50px;
+    border-radius: 15px;
+}
+nav a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+    font-family: Playfair;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 53px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:white;
+    width: 151px;
+    justify-content: space-around;
+
+}
+nav{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav a:nth-child(2){
+    color: #FFB2C7E0;
+    width: 164px;
+}
+nav a:nth-child(3){
+    color: #D2B56A;
+    width: 157px;
+}
+nav a:nth-child(4){
+    color: #FFC79E;
+    width: 164px;
+}
+.frame3{
+    width: 100vw;
+    height: 150px;
+    background: rgb(8, 8, 8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.frame2{
+    width: 100vw;
+    height: 1110px;
+    background: linear-gradient(180deg, #090606 0%, rgba(57, 143, 150, 0) 100%),
+    linear-gradient(0deg, #7aa5a5, #7ebeab);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.fr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1200px;
+    height:800px;
+}
+.cart{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cart img{
+    height: 577px;
+    width: 500px;
+    position: relative;
+}
+.cart p, .left p, .right p{
+    width: 500px;
+    height: 192px;
+    font-family: Playfair;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0.03em;
+    margin-top: 35px;
+    word-break: break-all;
+    text-align:justify;
+}
+.cart p{
+  text-align:justify;
+}
+.gradi{
+    background: linear-gradient(180deg, #FF8F8F 15%, rgba(141, 133, 133, 0) 100%),
+linear-gradient(0deg, #FFFFFF, #ffffff);
+-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.left p, .right p{
+    margin-top: -18px;
+    width: 256px;
+    height: auto;
+}
+
+.part2 {
+    display: flex;
+    justify-content: center;
+    width:100vw;
+    height: 750px;
+    background: linear-gradient(180deg, #7aa5a5 0%, rgba(255, 255, 255, 0) 100%),
+linear-gradient(0deg, #dfa3a3, #A26464);
+
+}
+.part2 .galeria {
+  display: flex;
+  justify-content: center;
+  width: 715px;
+  transform-style: preserve-3d; /*Располагает элементы в трехмерном пространстве.Без этого свойства слайдер всё равно работает, но так лучше*/
+}
+.gal{
+    margin-top: 30px;
+  position: absolute;
+  font-family: Playfair;
+font-size: 72px;
+font-weight: 400;
+line-height: 85px;
+letter-spacing: 0.03em;
+}
+.ourgal{
+    background: linear-gradient(180deg, #ffffff 15%, rgba(141, 133, 133, 0) 100%),
+linear-gradient(0deg, #ffffff, #042B34);
+
+-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.part2 .card { /*сами карточки, их свойства*/
+  background-size: 2px 2px, cover;
+  background-repeat: repeat, none;
+  background-position: 0 0;
+  width: 715px;
+  height: 477px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 2rem rgba(0,0,0,.5);
+  border-radius: 23px;
+}
+.part2 .una { /*картинка для 1 карточки*/
+  background: url(nat.jpg) no-repeat;
+}
+.part2 .dos { /*картинка для 3 карточки*/
+  background: url(https://avatars.mds.yandex.net/get-zen_doc/3985746/pub_5f6235836f388e770cfd82d3_5f6237f46f388e770c0254f3/scale_1200) no-repeat;
+}
+.part2 .tres { /*картинка для 2 карточки*/
+  background: url(skali.jpg) no-repeat;
+}
+.part2 .chet { /*картинка для 4 карточки*/
+  background: url(https://dev.portofranko-vl.ru/wp-content/uploads/2020/07/147933843614865632-1536x1151.jpg) no-repeat;
+}
+.part2 .pyat { /*картинка для 5 карточки*/
+  background: url(may.jpg) no-repeat;
+}
+.part2 input {visibility: hidden;} /*прячем радиокнопки*/
+.part2 label { /*кнопки внизу, то есть их общее расположение*/
+    left: 22%;
+    top: 105%;
+    cursor: pointer;
+    margin: 25px 62px 0 25px;
+    position: relative;
+}
+.part2 label::before { /*прорисовываем кнопки без закрашенности внутри*/
+	border: none;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #F9B9B9;
+	content: " ";
+	display: block;
+	height: 28px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	width: 28px;
+	border-radius: 50px;
+}
+#uno:checked ~ .una label:nth-child(3):after, 
+#dole:checked ~ .dos label:nth-child(3):after,
+#tele:checked ~ .tres label:nth-child(3):after,
+#four:checked ~ .chet label:nth-child(3):after,
+#five:checked ~ .pyat label:nth-child(3):after{ /*это работает для горизонтальных палочек белых, рядом с выбранным label*/
+  border: none;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #3DA8CA;
+	content: " ";
+	display: block;
+	height: 20px;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 20px;
+	border-radius: 50px;
+}
+
+#uno:checked ~ .chet, /*связываем радиокнопки с карточками, при нажатии на 1 кнопку для 3 карточки*/
+#dole:checked ~ .una, /* при нажатии на 3 кнопку для 2 карточки*/
+#tele:checked ~ .pyat,
+#four:checked ~ .tres, 
+#five:checked ~ .dos{ /*при нажатии на 2 кнопку для 1 карточки una с картинкой screenshot (тут строка с фоном 32)*/
+  animation: 1s zye; /*@keyframes ye*/
+  animation-fill-mode: forwards; /*по итогу анимации применяется стиль последнего элемента в keyframes, то есть строка со 100%, есть ещё свойство backwards*/
+  transform-origin: center left; /*вращение - начинается с центра элемента, заканчивается его расположение справа*/
+  z-index: 3; /*на третьем плане*/
+}
+#uno:checked ~ .dos, /*связываем радиокнопки с карточками, при нажатии на 1 кнопку для 3 карточки*/
+#dole:checked ~ .pyat, /* при нажатии на 3 кнопку для 2 карточки*/
+#tele:checked ~ .chet,
+#four:checked ~ .una,
+#five:checked ~ .tres { /*при нажатии на 2 кнопку для 1 карточки una с картинкой screenshot (тут строка с фоном 32)*/
+  animation: 1.5s z-dch; /*@keyframes ye*/
+  animation-fill-mode: forwards; /*по итогу анимации применяется стиль последнего элемента в keyframes, то есть строка со 100%, есть ещё свойство backwards*/
+  transform-origin: center right; /*вращение - начинается с центра элемента, заканчивается его расположение справа*/
+  z-index: 3; /*на третьем плане*/
+}
+#uno:checked ~ .pyat, /*связываем радиокнопки с карточками, при нажатии на 1 кнопку для 3 карточки*/
+#dole:checked ~ .tres, /* при нажатии на 3 кнопку для 2 карточки*/
+#tele:checked ~ .una,
+#four:checked ~ .dos,
+#five:checked ~ .chet { /*при нажатии на 2 кнопку для 1 карточки una с картинкой screenshot (тут строка с фоном 32)*/
+  animation: 2s ye; /*@keyframes ye*/
+  animation-fill-mode: forwards; /*по итогу анимации применяется стиль последнего элемента в keyframes, то есть строка со 100%, есть ещё свойство backwards*/
+  transform-origin: center left; /*вращение - начинается с центра элемента, заканчивается его расположение справа*/
+  z-index: 4; /*на третьем плане*/
+}
+#uno:checked ~ .tres, /*при нажатии на 1 кнопку для 2 карточки*/
+#dole:checked ~ .chet, /*при нажатии на 3 кнопку для 1 карточки*/
+#tele:checked ~ .dos,
+#four:checked ~ .pyat,
+#five:checked ~ .una { /*при нажатии на 2 кнопку для 3 карточки*/
+  animation: 2.5s fuera-dch;
+  animation-fill-mode: forwards;
+  transform-origin: center right; /*располагается справа от центра*/
+  z-index: 4; /*на втором плане*/
+}
+#uno:checked ~ .una, /*при нажатии на 1 кнопку для 1 карточки*/
+#dole:checked ~ .dos, /*при нажатии на 3 кнопку для 3 карточки*/
+#tele:checked ~ .tres,
+#four:checked ~ .chet,
+#five:checked ~ .pyat { /*то есть при нажатии кнопки (1, 2, 3) соответствующая по счёту карточка выходит на 1 план*/
+  animation: 3s central; 
+  animation-fill-mode: forwards;
+  transform-origin: center center;
+  z-index: 5; /*на первом плане*/
+}
+@keyframes zye { /*создали правило ye для картинки с первого на последний план, % означают время выполнения анимации, то есть с 0 начинается, на 100 заканчивается */
+  0% {transform: scale(1) translatex(0%);}  /*исходные данные карточки*/
+  70% {transform: scale(.9) translatex(-30%);} /*чуть дальше середины анимации масштаб уменьшается на 0.1 и карточка сдвигается влево на 100% своей ширины*/
+  100% {transform: scale(.4066) translatex(-77%) translatey(-50%);} /*по итогу картинка сдвинута на 14% вправо от исходного местоположения и уменьшена на 02*/
+}
+@keyframes z-dch { /*правило для картинки с первого на второй план*/
+  0% {transform: scale(1) translatex(0%);} /*исходные данные карточки на момент начала анимации*/
+  70% {transform: scale(.9) translatex(30%);} /*сдвигается вправо на 100% своей ширины*/
+  100% {transform: scale(.4066) translatex(77%) translatey(-50%);} /*по итогу картинка сдвинута на 7% вправо от главного изображения(исходного местоположения)*/
+}
+@keyframes ye { /*создали правило ye для картинки с первого на последний план, % означают время выполнения анимации, то есть с 0 начинается, на 100 заканчивается */
+  0% {transform: scale(1) translatex(0%) ;}  /*исходные данные карточки*/
+  70% {transform: scale(.9) translatex(-50%) translatey(50%);} /*чуть дальше середины анимации масштаб уменьшается на 0.1 и карточка сдвигается влево на 100% своей ширины*/
+  100% {transform: scale(.5464) translatex(-30%) translatey(10%);} /*по итогу картинка сдвинута на 14% вправо от исходного местоположения и уменьшена на 02*/
+}
+@keyframes fuera-dch { /*правило для картинки с первого на второй план*/
+  0% {transform: scale(1) translatex(0%) ;} /*исходные данные карточки на момент начала анимации*/
+  70% {transform: scale(.9) translatex(50%) translatey(50%);} /*сдвигается вправо на 100% своей ширины*/
+  100% {transform: scale(.5464) translatex(30%) translatey(10%);} /*по итогу картинка сдвинута на 7% вправо от главного изображения(исходного местоположения)*/
+}
+@keyframes central { /*правило для первой картинки(главной). По итогу картинка переходит на первый план, изначально она или вторая или последняя*/
+  0% {transform: scale(.8);z-index: 3;} /*сначала не на первом плане*/
+  80% {transform: scale(.5);z-index: 4;}
+  100% {transform: scale(1) translatey(50%);z-index: 5;}/*теперь на первом плане*/
+}
+@keyframes pulso {
+  50% {opacity: .7;}
+}
+#uno:checked ~ .tres label, #uno:checked ~ .dos label, #uno:checked ~ .chet label, #uno:checked ~ .pyat label,
+#tele:checked ~ .una label, #tele:checked ~ .dos label, #tele:checked ~ .chet label, #tele:checked ~ .pyat label,
+#dole:checked ~ .tres label, #dole:checked ~ .una label, #dole:checked ~ .chet label, #dole:checked ~ .pyat label,
+#four:checked ~ .tres label, #four:checked ~ .una label, #four:checked ~ .dos label, #four:checked ~ .pyat label,
+#five:checked ~ .tres label, #five:checked ~ .dos label, #five:checked ~ .chet label, #five:checked ~ .una label {
+  visibility: hidden;
+}
+.container{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.part4{
+  width:auto;
+  height: 1000px;
+  background: linear-gradient(180deg, #dfa3a3 8.97%, rgba(255, 255, 255, 0) 153.5%),
+linear-gradient(180.68deg, #FFFFFF 22.08%, rgba(237, 139, 49, 0) 351.14%, rgba(255, 154, 61, 0.193094) 351.14%),
+linear-gradient(0deg, #273C88, #273C88);
+
+}
+.commenth1{
+  width: 645px;
+  font-family: Playfair;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 96px;
+  letter-spacing: 0.05em;
+  background: linear-gradient(183.05deg, #ffffff 25.39%, rgba(255, 255, 255, 1) 56%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 3px 0px 10px rgba(0, 0, 0, 0.25);
+}
+.mary{
+  position: relative;
+  width: 686px;
+  height: 299px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(344.75deg, #535881 23.08%, rgba(255, 255, 255, 0) 47.59%),
+  linear-gradient(90.53deg, #11164A 5.58%, rgba(207, 218, 254, 0) 87.91%),
+  linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  margin-top: 50px;
+}
+.mary p{
+  position: absolute;
+  margin-top: 125px;
+  width: 632px;
+  margin-left: 35px;
+  font-family: Playfair;
+  color: white;
+  font-size: 26px;
+  line-height: 40px;
+  letter-spacing: 0em;
+}
+.mary .icon{
+  position: absolute;
+  width: 50px;
+  border-radius: 15px;
+  margin-left: 625px;
+  margin-top: 17px;
+}
+.mary .profile{
+  position: absolute;
+  z-index: 2;
+  width: 93px;
+  border-radius: 100px;
+  margin-left: 35px;
+  margin-top: 17px;
+}
+.mary .Ellipse{
+  position: absolute;
+  z-index: 1;
+  width: 93px; 
+  height: 95px;
+  background: #526DFA;
+  border-radius: 100px;
+  margin-left: 40px;
+  margin-top: 17px;
+}
+.mary .name{
+  position: absolute;
+  margin-top: 17px;
+  margin-left: 175px;
+  font-family: Playfair;
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 53px;
+  letter-spacing: 0em;
+}
+.mary .age{
+  position: absolute;
+  margin-top: 55px;
+  margin-left: 175px;
+  font-family: Playfair;
+  color: #C7CCD6;
+  font-size: 26px;
+  line-height: 53px;
+  letter-spacing: 0em;
+}
+.vik{
+  position: relative;
+  width: 485px;
+  height: 177px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(340.5deg, #e75592 -22.37%, rgba(255, 255, 255, 0) 34.76%),
+  linear-gradient(308.93deg, #FFFFFF 54.7%, rgba(255, 255, 255, 0.69) 124.09%),
+  linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+.vik p{
+  position: absolute;
+  margin-top: 125px;
+  width: 632px;
+  margin-left: 35px;
+  font-family: Playfair;
+  color: #FA5682;
+  font-size: 26px;
+  line-height: 40px;
+  letter-spacing: 0em;
+}
+.vik .icon{
+  position: absolute;
+  width: 43px;
+  border-radius: 15px;
+  margin-left: 421px;
+  margin-top: 17px;
+}
+.vik .profile{
+  position: absolute;
+  z-index: 2;
+  width: 93px;
+  border-radius: 100px;
+  margin-left: 35px;
+  margin-top: 17px;
+}
+.vik .Ellipse{
+  position: absolute;
+  z-index: 1;
+  width: 93px; 
+  height: 95px;
+  background: #FA5682;
+  border-radius: 100px;
+  margin-left: 40px;
+  margin-top: 17px;
+}
+.vik .name{
+  position: absolute;
+  margin-top: 17px;
+  margin-left: 175px;
+  font-family: Playfair;
+  color: #FA5682;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 53px;
+  letter-spacing: 0em;
+}
+.vik .age{
+  position: absolute;
+  margin-top: 55px;
+  margin-left: 175px;
+  font-family: Playfair;
+  color: #f394c8;
+  font-size: 26px;
+  line-height: 53px;
+  letter-spacing: 0em;
+}
+.complex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.chto{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.empty{
+  height: 125px;
+}
+.leto{
+  position: relative;
+  width: 485px;
+  height: 177px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(340.5deg, #e7d155 -22.37%, rgba(255, 255, 255, 0) 34.76%),
+  linear-gradient(308.93deg, #FFFFFF 54.7%, rgba(255, 255, 255, 0.69) 124.09%),
+  linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+.leto p{
+  position: absolute;
+  margin-top: 125px;
+  width: 632px;
+  margin-left: 35px;
+  font-family: Playfair;
+  color: #F0A001;
+  font-size: 26px;
+  line-height: 40px;
+  letter-spacing: 0em;
+}
+.leto .icon{
+  position: absolute;
+  width: 47px;
+  border-radius: 15px;
+  margin-left: 421px;
+  margin-top: 17px;
+}
+.leto .profile{
+  position: absolute;
+  z-index: 2;
+  width: 93px;
+  border-radius: 100px;
+  margin-left: 35px;
+  margin-top: 17px;
+}
+.leto .Ellipse{
+  position: absolute;
+  z-index: 1;
+  width: 93px; 
+  height: 95px;
+  background: #F0A001;
+  border-radius: 100px;
+  margin-left: 40px;
+  margin-top: 17px;
+}
+.leto .name{
+  position: absolute;
+  margin-top: 17px;
+  margin-left: 175px;
+  font-family: Playfair;
+  color: #F0A001;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 53px;
+  letter-spacing: 0em;
+}
+.leto .age{
+  position: absolute;
+  margin-top: 55px;
+  margin-left: 175px;
+  font-family: Playfair;
+  color: #d3c863;
+  font-size: 26px;
+  line-height: 53px;
+  letter-spacing: 0em;
+}
+.autumn{
+  position: relative;
+  width: 686px;
+  height: 299px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(350.17deg, #FF9776 23.54%, rgba(255, 255, 255, 0) 54.06%),
+  linear-gradient(108.27deg, #E3A964 23.15%, rgba(255, 255, 255, 0) 82.48%),
+  linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+.autumn p{
+  position: absolute;
+  margin-top: 125px;
+  width: 632px;
+  margin-left: 35px;
+  font-family: Playfair;
+  color: white;
+  font-size: 26px;
+  line-height: 40px;
+  letter-spacing: 0em;
+}
+.autumn .icon{
+  position: absolute;
+  width: 50px;
+  border-radius: 15px;
+  margin-left: 625px;
+  margin-top: 17px;
+}
+.autumn .profile{
+  position: absolute;
+  z-index: 2;
+  width: 93px;
+  border-radius: 100px;
+  margin-left: 35px;
+  margin-top: 17px;
+}
+.autumn .Ellipse{
+  position: absolute;
+  z-index: 1;
+  width: 93px; 
+  height: 95px;
+  background: #e95d3a;
+  border-radius: 100px;
+  margin-left: 40px;
+  margin-top: 17px;
+}
+.autumn .name{
+  position: absolute;
+  margin-top: 17px;
+  margin-left: 175px;
+  font-family: Playfair;
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 53px;
+  letter-spacing: 0em;
+}
+.autumn .age{
+  position: absolute;
+  margin-top: 55px;
+  margin-left: 175px;
+  font-family: Playfair;
+  color: #94632A;
+  font-size: 26px;
+  line-height: 53px;
+  letter-spacing: 0em;
+}
+.complex1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+.shto{
+  height: 385px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.em{
+  width: 100vw;
+  height: 150px;
+  background: #dfa3a3;
+}
+footer{
+  height: 210px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+
+}
+footer hr{
+  border: none;
+  background: 
+  linear-gradient(89.99deg, #a58d8d 26.85%, rgba(255, 255, 255, 0) 79.04%), linear-gradient(25deg, #b97b78, #FFAEA9),
+linear-gradient(269.98deg, #5C82E2 3.05%, rgba(255, 255, 255, 0) 16.71%);
+  height: 3px;
+}
+.copyrights, .contacts{
+  font-family: Playfair;
+  font-size: 26px;
+  letter-spacing: 0em;
+  color: #726060;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+.contacts img{
+  width: 67px;
+}
+.contacts{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.underfooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.social img{
+  width: 57px;
+}
+.face img{
+  width: 70px;
+}
+.social img:hover{
+  transform: scale(1.1);
+}
+.social{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+}
+.part5{
+  width: 100vw;
+  height: 1100px;
+  background: linear-gradient(180deg, rgb(211,192,204) 5.54%, rgba(251, 255, 79, 0.19) 105.54%),linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+.uppart div{
+  width: 600px;
+}
+.uppart img{
+  width: 500px;
+  height: 500px;
+  transform: scale(1.35);
+}
+.uppart{
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 200px;
+}
+.rightpart{
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Playfair;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  color: #583E61;
+}
+.part5 .button{
+  font-family: PlayfairRegular;
+  font-size: 24px;
+  width: 200px;
+  height: 68px;
+  background: linear-gradient(180deg, #FBD1D1 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, #E97373, #E97373);
+  border-radius: 13px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.part5 button:active{
+  transform: scale(1.1);
+}
+.part5 .form {
+  font-family: PlayfairRegular;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.part5 input{
+  width: 385px;
+  height: 68px;
+  background: linear-gradient(244.63deg, #FFFFFF -2.45%, rgba(255, 255, 255, 0) 101.66%),linear-gradient(0deg, #C4C4C4, #C4C4C4);
+  border-radius: 13px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  resize: none;
+  position: relative;
+}
+.part5 label{
+  font-family: PlayfairRegular;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  margin-top: -110px;
+  margin-left: 21px;
+  color: #726060;
+}
+.part5 input:focus, .part5 input{
+  color: #b65858;
+  font-family: PlayfairRegular;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+.part5 input[type="text"]{
+  padding-left: 21px;
+}
+.part5 .field {
+  position: relative;
+  padding-top: 40px;
+  margin-bottom: 10px;
+}
+.part5 label {
+  position: absolute;
+  left: 0px;
+  top: 161px;
+  transition: top 0.5s;
+  pointer-events: none;
+} 
+.part5 input:focus,
+.part5 textarea:focus {
+  outline: none;
+  background-size: 100% 100%, 100% 100%;
+  transition-duration: 0.3s;
+  box-shadow: none;
+}
+.part5 input:focus+label,
+.part5 input:not(:placeholder-shown)+label,
+.part5 textarea:focus+label,
+.part5 textarea:not(:placeholder-shown)+label {
+  top: 140px;
+}
+.part5 .container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logo img{
+  height: 125px;
+  transform: scale(2);
+}
+.logo{
+  display: flex;
+  justify-content: flex-end;
+  width: 215px;
+}
